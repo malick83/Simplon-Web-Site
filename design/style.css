@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    
+    font-family: 'Nunito Sans', sans-serif;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+nav {
+    /* background-color:#f0f1ff; */
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -15.6px;
+    width: 100%;
+    height: 83px;
+    font-weight: bold;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+
+}
+nav ul {
+    list-style: none;
+    display: inline-flex
+
+}
+img.nav-item-logo {
+    width: 49%;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 23px;
+    
+}
+.nav-item-langue {
+    margin-right: -20px;
+    margin-left: 55px;
+}
+.nav-item-entite {
+    margin-right: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+.image-accueil {
+    position: relative;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+}
+.img-accueil {
+    width: 100%;
+}
+
+.image-accueil h1 {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    font-size: 70px;
+}
+.image-accueil h2 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.button-accueil {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    width: 200px;
+    height: 55px;
+    background-color:#ce0033;
+    border: #ce0033;
+    border-radius: 34px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-search {
+    margin-top: -4px;
+}
+
+a.item-text {
+    position: relative;
+    padding: 20px;
+}
+
+.item-text::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    background-color: #ce00346b;
+    height: 5px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    /* bottom: 0; */
+    left: 0;
+    transition: .3s;
+}
+
+.item-text:not(.is-active):hover::before{
+    bottom: 0;
+}
+
+.item-text:not(.is-active):hover {
+    color: #ce00346b;
+}
+
+.nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    transition: .4s;
+    border-radius: 8px 8px 0 0;
+}
