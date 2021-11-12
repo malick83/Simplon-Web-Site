@@ -4,8 +4,8 @@
 body{
     
     font-family: 'Nunito Sans', sans-serif;
-    overflow: hidden;
-    overflow-x: scroll;
+    /* overflow: hidden;
+    overflow-x: scroll; */
 }
 
 nav {
@@ -19,7 +19,8 @@ nav {
     font-weight: bold;
     font-size: 16px;
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    z-index: 3;
 
 }
 nav ul {
@@ -64,19 +65,19 @@ nav a {
 
 .image-accueil h1 {
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 15%;
     font-size: 70px;
 }
 .image-accueil h2 {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 15%;
 }
 
 .button-accueil {
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 15%;
     width: 200px;
     height: 55px;
@@ -124,4 +125,128 @@ a.item-text {
     height: 5px;
     transition: .4s;
     border-radius: 8px 8px 0 0;
+}
+.nav-item button {
+    margin-top: -14px;
+    width: 80px;
+    height: 40px;
+    background-color:#ce0033;
+    border: #ce0033;
+    border-radius: 34px;
+    color: white;
+    font-weight: bold;
+}
+
+.after-nav {
+    background-color: #ce003417;
+    height: 950px;
+    margin: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 12%;
+}
+.after-nav .img-directrice-ctrl {
+    position:absolute;
+    margin-left: 0px;
+    margin-top: 100px;
+    margin-right: 80px;
+    /* border: 4px solid red; */
+    width: 30%;
+    height: 772px;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.after-nav .img-directrice {
+    position: absolute;
+    top: -128px;
+    left: -50px;
+
+}
+
+.text-directrice-ctrl {
+    position:absolute;
+    margin-left: 700px;
+    margin-top: 100px;
+    margin-right: 80px;
+    /* border: 4px solid red; */
+    width: 35%;
+    height: 772px;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.text-directrice-ctrl h2 {
+    color:#ce0033;
+}
+article header h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    color: #ce0033;
+    font-size: 55px;
+}
+
+article span {
+    position: relative;
+    margin-left: 120px;
+    margin-top: 120px;
+    font-weight: bold;
+    color: #ce0033;
+    font-size: 55px;
+}
+article .bloc-mere-line-1 {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+/* article div {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+article .actu1 {
+    position: relative;
+    margin-left: 104px;
+} */
+
+article div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+article div figure img {
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+}
+
+
+article div figure p{
+    width: 400px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+article .bloc-mere-line-1 div figure figcaption {
+    width: 400px;
 }
