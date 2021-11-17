@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    
+    font-family: 'Nunito Sans', sans-serif;
+    /* overflow: hidden;
+    overflow-x: scroll; */
+}
+
+nav {
+    /* background-color:#f0f1ff; */
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -15.6px;
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    font-size: 16px;
+    /* overflow-x: hidden; */
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    overflow: hidden;
+ 
+}
+img.nav-item-logo {
+    position: absolute;
+    width: 150px;
+    left: 5%;
+    top: 25%;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 15px;
+
+    
+}
+.nav-item-langue {
+    margin-right: -20px;
+    margin-left: 50px;
+    margin-top: -5px;
+}
+.nav-item-entite {
+    margin-right: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+.image-accueil {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+}
+.img-accueil {
+    width: 100%;
+}
+
+.image-accueil h1 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-size: 70px;
+}
+.image-accueil h2 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.button-accueil {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 200px;
+    height: 55px;
+    background-color:#ce0033;
+    border: #ce0033;
+    border-radius: 34px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-search {
+    margin-top: -4px;
+}
+
+a.item-text {
+    position: relative;
+    padding: 20px;
+}
+
+.item-text::before {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    background-color: #ce00346b;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    transition: .3s;
+}
+
+.item-text:not(.is-active):hover::before{
+    bottom: 9px;
+}
+
+.item-text:not(.is-active):hover {
+    color: #ce00346b;
+}
+
+.nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    transition: .4s;
+}
+.nav-item button {
+    margin-top: -6px;
+    margin-right: 0px;
+    width: 110px;
+    height: 36px;
+    background-color:#ce0033;
+    border: #ce0033;
+    border-radius: 34px;
+    color: white;
+    font-weight: bold;
+}
+
+.after-nav {
+    background-color: #ce003417;
+    height: 950px;
+    margin: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 12%;
+}
+.after-nav .img-directrice-ctrl {
+    position:absolute;
+    margin-left: 0px;
+    margin-top: 100px;
+    margin-right: 80px;
+    /* border: 4px solid red; */
+    width: 30%;
+    height: 772px;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.after-nav .img-directrice {
+    position: absolute;
+    top: -128px;
+    left: -50px;
+
+}
+
+.text-directrice-ctrl {
+    position:absolute;
+    margin-left: 700px;
+    margin-top: 100px;
+    margin-right: 80px;
+    /* border: 4px solid red; */
+    width: 35%;
+    height: 772px;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.text-directrice-ctrl h2 {
+    color:#ce0033;
+}
+article header h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    color: #ce0033;
+    font-size: 55px;
+}
+
+article span {
+    position: relative;
+    margin-left: 120px;
+    margin-top: 120px;
+    font-weight: bold;
+    color: #ce0033;
+    font-size: 55px;
+}
+article .bloc-mere-line-1 {
+    /* position: absolute; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+
+/* article div {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+article .actu1 {
+    position: relative;
+    margin-left: 104px;
+} */
+
+article div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 360px;
+    position: relative;
+}
+article div figure img {
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+}
+
+
+
+article div figure .image-2 {
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+    height: 230px;
+}
+
+
+article div figure p{
+    position: relative;
+    width: 400px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+article div figure .etiquette {
+
+    position:absolute;
+    margin-top: -420px;
+    margin-left: 320px;
+    /* width: 35px;
+    height: 47px; */
+    /* position:absolute;
+    margin-top: -390px;
+    margin-left: 320px;
+    width: 35px;
+    height: 47px;
+    border-radius: 0 0 17px 17px; */
+}
+article div figure .etiquette img {
+
+    position:absolute;
+    width: 36.5px;
+    border-radius: 0 0 17px 17px;
+}
+
+article div figure .etiquette time .hour {
+    position: absolute;
+    color: white;
+    margin: 10px 4px;
+    font-size: 23px;
+}
+
+article div figure .etiquette time .first-month {
+    position: absolute;
+    color: white;
+    margin: 10px 7px;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+article .bloc-mere-line-1 div figure figcaption {
+    width: 400px;
+}
+
+article span.voir-plus {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 75px;
+}
+
+article .voir-plus img {
+    width: 2.5%;
+}
+
+/* .bloc-mere-line-1-inherit {
+    border: 3px solid red;
+    padding: px;
+} */
+
+.bloc-mere-line-1-ext {
+    border-radius: 15px;
+    background-color: #ce0033;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 45px;
+    width: 100%;
+}
+
+.bloc-mere-line-1-ext .event-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -100px;
+    box-sizing: border-box;
+
+}
+
+.bloc-mere-line-1-ext .event-title {
+    font-size: 17px;
+    margin-left: 0px;
+    color: white;
+}
+
+.bloc-mere-line-1-ext .event-title::after{
+    content: "";
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 7px;
+    background-color: white;
+    height: 2.5px;
+    width: 70px;
+}
+
+
+/* .bloc-mere-line-1-ext .event-text {
+    position: relative;
+}  */
+
+.bloc-mere-line-1-ext .event-text p {
+    font-weight: bold;
+    width: 450px;
+    font-size: 30px;
+    color: white;
+    margin-top: 15px;
+}
+
+/* .bloc-mere-line-1 time .month {
+    padding-left: -90px;
+} */
+
+.bloc-mere-line-1 time span{
+    margin-right: 50px;
+    
+    color: white;
+}
+
+.bloc-mere-line-1 time .month {
+    font-size: 18px;
+}
+
+section h2 {
+    float: right;
+    margin-right: 365px;
+    color: #ce0033;
+    margin-bottom: 100px;
+}
+
+section .image-decouverte {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+section .img-decouverte {
+    height: 825px;
+    width: auto;
+}
+
+.image-decouverte h2 {
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 7%;
+    font-weight: bold;
+    font-size: 145px;
+}
+.image-decouverte h3 {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    width: 1050px;
+    line-height: 55px;
+    font-size: 28px;
+}
+section .chiffre-simplon {
+    /* background-image: url("/pictures/background-dec.png"); */
+    /* background-repeat: no-repeat;
+    background-size: 87%; */
+    background-color: #ce0033;
+    border-radius: 15px;
+    position: relative;
+    top: -150px;
+    left: 7%;
+    right: 7%;
+    padding-left: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+
+}
+
+section .chiffre-simplon article h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 85px;
+}
+
+section .chiffre-simplon article p {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 330px;
+    margin-left: -85px;
+    text-align: center;
+}
+
