@@ -383,6 +383,17 @@ article .voir-plus img {
     margin-top: 15px;
 }
 
+.bloc-mere-line-1-ext .event-details {
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 50px;
+}
+
+.bloc-mere-line-1-ext .event-details img {
+    width: 120%;
+}
+
+
 /* .bloc-mere-line-1 time .month {
     padding-left: -90px;
 } */
