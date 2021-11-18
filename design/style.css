@@ -6,6 +6,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     /* overflow: hidden;
     overflow-x: scroll; */
+    overflow-x: hidden;
 }
 
 nav {
@@ -466,4 +467,163 @@ section .chiffre-simplon article p {
     margin-left: -85px;
     text-align: center;
 }
+
+
+section span.titre-dans-decouverte {
+    position: relative;
+    margin-left: 120px;
+    margin-top: 120px;
+    font-weight: bold;
+    color: #ce0033;
+    font-size: 55px;
+
+}
+
+
+section span.titre-dans-decouverte::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    background-color: black;
+    height: 3px;
+    width: 50%;
+    left: 0;
+
+}
+
+section .formateurs-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* width: 100%;
+    height: 700px; */
+
+    margin: 100%;
+    margin-left: 120px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 800px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+section .formateurs-line .premiere-carte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 10px;
+
+    box-shadow: 10px 8px 34px 6px rgba(185, 181, 181, 0.685);
+
+
+    margin: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    width: 550px;
+    height: 450px;
+}
+
+
+
+section .formateurs-line .premiere-carte .partie-gauche {
+
+    position: absolute;
+    overflow: hidden;
+    width: 226px;
+    height: 259px;
+    top: -17px;
+    left: -17px;
+    border-radius: 10px;
+    box-shadow: 10px 8px 34px 6px rgba(185, 181, 181, 0.685);
+
+}
+
+
+
+section .formateurs-line .premiere-carte .partie-gauche img {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 115%;
+}
+
+section .formateurs-line .premiere-carte .partie-droite img {
+    position: absolute;
+    height: 90px;
+    width: 125px;
+    top: -45px;
+    left: 450px;
+
+
+}
+
+section .formateurs-line .premiere-carte .partie-droite .texte-de-presentation {
+    position: absolute;
+    left: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section .formateurs-line .premiere-carte .partie-droite .texte-de-presentation .son-poste {
+    position: absolute;
+    top: 150px;
+    font-size: 24px;
+    opacity: .65;
+
+}
+
+section .formateurs-line .premiere-carte .partie-droite .texte-de-presentation p {
+    position: absolute;
+    font-size: 18px;
+    line-height: 26px;
+    top: 170px;
+    width: 280px;
+
+}
+
+
+section .formateurs-line .premiere-carte .partie-droite .texte-de-presentation h2 {
+    position: relative;
+    width: 100%;
+    top: 45px;
+    color:black;
+    font-size: 30px;
+
+}
+
+section .formateurs-line .premiere-carte .partie-droite .texte-de-presentation h2::after {
+
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    margin-top: 32px;
+    background-color: black;
+    height: 3px;
+    width: 48%;
+    left: 0;
+}
+
+
+section .formateurs-line .premiere-carte .partie-droite .button-voir-plus button {
+    position: absolute;
+    top: 380px;
+    left: 480px;
+    width: 120px;
+    height: 35px;
+    background-color:#ce0033;
+    border: #ce0033;
+    border-radius: 34px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
 
